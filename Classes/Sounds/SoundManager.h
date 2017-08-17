@@ -11,6 +11,7 @@ public:
 	static const std::string BUBBLES_SOUND_PATH;
 	static const std::string BUBBLES_ATTACK_1_SOUND_PATH;
 	static const std::string BUBBLES_ATTACK_2_SOUND_PATH;
+	static const std::string ENEMY_DEATH_SOUND_PATH;
 	static void init();
 
 	void playBackgroundMusic();
@@ -18,6 +19,7 @@ public:
 
 	void playBubblesSound();
 	void playBubbleAttackSound();
+	void playEnemyDeathSound();
 private:
 	static SoundManager *_instance;
 	SoundManager();

@@ -4,7 +4,8 @@ enum class GameObjectType
 {
 	DEFAULT,
 	PLAYER,
-	PLAYER_BUBBLE
+	PLAYER_BUBBLE,
+	ENEMY
 };
 class BaseGameObject
 {
@@ -15,6 +16,8 @@ public:
 	void addToWorld(Layer *world);
 	void addBodySprite(BodySprite *bodySprite);
 	BodySprite *getSpriteByName(const std::string &name) const;
+
+	virtual void destroy();
 
 	virtual GameObjectType getType() const;
 protected:

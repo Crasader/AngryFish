@@ -35,6 +35,11 @@ void PlayerBubble::setDeath()
 	}), nullptr));
 }
 
+PlayerBubbleState PlayerBubble::getState() const
+{
+	return _state;
+}
+
 void PlayerBubble::notifyDeathEvent()
 {
 	if (onDeath)

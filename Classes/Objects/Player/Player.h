@@ -25,6 +25,7 @@ public:
 	float getBubbleSpeed() const;
 
 	void attack();
+	void damage();
 
 	void setCurrentStateController(PlayerStateController *stateController);
 	void sendStateCommand(PlayerStateCommand commandType, void *data = nullptr);

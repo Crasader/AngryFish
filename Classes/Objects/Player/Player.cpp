@@ -79,6 +79,11 @@ void Player::attack()
 	sendStateCommand(PlayerStateCommand::ATTACK);
 }
 
+void Player::damage()
+{
+	sendStateCommand(PlayerStateCommand::DAMAGE);
+}
+
 void Player::setCurrentStateController(PlayerStateController *stateController)
 {
 	if (_currentStateController)

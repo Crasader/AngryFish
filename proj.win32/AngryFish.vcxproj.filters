@@ -37,6 +37,12 @@
     <Filter Include="Objects\PlayerBubble">
       <UniqueIdentifier>{ddd81ad5-ecd0-4850-9483-9d06c1edebf6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Enemy">
+      <UniqueIdentifier>{ccceb46d-eb8d-419f-bf97-c90dc4032241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemy\StateControllers">
+      <UniqueIdentifier>{79e39df4-8a43-4d42-94a3-a2e4f275c257}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -93,6 +99,24 @@
     <ClCompile Include="..\Classes\Objects\PlayerBubble\PlayerBubble.cpp">
       <Filter>Objects\PlayerBubble</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Enemy\Enemy.cpp">
+      <Filter>Objects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyStateController.cpp">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyDeathStateController.cpp">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyIdleStateController.cpp">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cocos\PerlinPositionShakeAction.cpp">
+      <Filter>Cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cocos\PerlinTransformShakeAction.cpp">
+      <Filter>Cocos</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -148,6 +172,24 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Objects\PlayerBubble\PlayerBubble.h">
       <Filter>Objects\PlayerBubble</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Enemy\Enemy.h">
+      <Filter>Objects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyStateController.h">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyDeathStateController.h">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyIdleStateController.h">
+      <Filter>Objects\Enemy\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cocos\PerlinPositionShakeAction.h">
+      <Filter>Cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cocos\PerlinTransformShakeAction.h">
+      <Filter>Cocos</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

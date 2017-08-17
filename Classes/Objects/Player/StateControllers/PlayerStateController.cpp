@@ -14,6 +14,7 @@ bool PlayerStateController::executePossibleDamageCommand(PlayerStateCommand comm
 {
 	if (commandType == PlayerStateCommand::DAMAGE)
 	{
+		_player->setDeathState();
 		return true;
 	}
 	return false;

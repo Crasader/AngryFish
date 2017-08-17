@@ -146,10 +146,16 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\Cocos\BodySprite.cpp" />
+    <ClCompile Include="..\Classes\Cocos\PerlinPositionShakeAction.cpp" />
+    <ClCompile Include="..\Classes\Cocos\PerlinTransformShakeAction.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\Math\AngleHelper.cpp" />
     <ClCompile Include="..\Classes\Math\AngleUnwrapper.cpp" />
     <ClCompile Include="..\Classes\Objects\Common\BaseGameObject.cpp" />
+    <ClCompile Include="..\Classes\Objects\Enemy\Enemy.cpp" />
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyDeathStateController.cpp" />
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyIdleStateController.cpp" />
+    <ClCompile Include="..\Classes\Objects\Enemy\StateControllers\EnemyStateController.cpp" />
     <ClCompile Include="..\Classes\Objects\PlayerBubble\PlayerBubble.cpp" />
     <ClCompile Include="..\Classes\Objects\Player\Player.cpp" />
     <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.cpp" />
@@ -168,10 +174,16 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\Cocos\BodySprite.h" />
+    <ClInclude Include="..\Classes\Cocos\PerlinPositionShakeAction.h" />
+    <ClInclude Include="..\Classes\Cocos\PerlinTransformShakeAction.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\Math\AngleHelper.h" />
     <ClInclude Include="..\Classes\Math\AngleUnwrapper.h" />
     <ClInclude Include="..\Classes\Objects\Common\BaseGameObject.h" />
+    <ClInclude Include="..\Classes\Objects\Enemy\Enemy.h" />
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyDeathStateController.h" />
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyIdleStateController.h" />
+    <ClInclude Include="..\Classes\Objects\Enemy\StateControllers\EnemyStateController.h" />
     <ClInclude Include="..\Classes\Objects\PlayerBubble\PlayerBubble.h" />
     <ClInclude Include="..\Classes\Objects\Player\Player.h" />
     <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.h" />

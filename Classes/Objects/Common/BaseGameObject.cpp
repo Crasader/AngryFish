@@ -36,6 +36,11 @@ BodySprite * BaseGameObject::getSpriteByName(const std::string &name) const
 	});
 }
 
+void BaseGameObject::destroy()
+{
+
+}
+
 GameObjectType BaseGameObject::getType() const
 {
 	return GameObjectType::DEFAULT;

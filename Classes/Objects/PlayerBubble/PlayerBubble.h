@@ -16,6 +16,8 @@ public:
 	void setFly();
 	void setDeath();
 
+	PlayerBubbleState getState() const;
+
 	void notifyDeathEvent();
 
 	std::function<void()> onDeath = nullptr;

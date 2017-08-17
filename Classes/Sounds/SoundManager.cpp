@@ -13,6 +13,8 @@ const std::string SoundManager::BUBBLES_ATTACK_1_SOUND_PATH = "sounds/bubble_att
 
 const std::string SoundManager::BUBBLES_ATTACK_2_SOUND_PATH = "sounds/bubble_attack_2.mp3";
 
+const std::string SoundManager::ENEMY_DEATH_SOUND_PATH = "sounds/slap.mp3";
+
 void SoundManager::init()
 {
 	if (_instance)
@@ -25,7 +27,10 @@ void SoundManager::init()
 
 void SoundManager::playBackgroundMusic()
 {
-	_musicId = AudioEngine::play2d(BACKGROUND_MUSIC_PATH, true, _volume);
+	if (AudioEngine::getState(_musicId) != AudioEngine::AudioState::PLAYING)
+	{
+		_musicId = AudioEngine::play2d(BACKGROUND_MUSIC_PATH, true, _volume);
+	}
 }
 
 void SoundManager::stopBackgroundMusic()
@@ -33,6 +38,7 @@ void SoundManager::stopBackgroundMusic()
 	if (_musicId != -1)
 	{
 		AudioEngine::stop(_musicId);
+		_musicId = -1;
 	}
 }
 
@@ -53,6 +59,11 @@ void SoundManager::playBubbleAttackSound()
 	{
 		AudioEngine::play2d(BUBBLES_ATTACK_2_SOUND_PATH, false, _volume);
 	}
+}
+
+void SoundManager::playEnemyDeathSound()
+{
+	AudioEngine::play2d(ENEMY_DEATH_SOUND_PATH, false, _volume);
 }
 
 SoundManager * SoundManager::_instance = nullptr;
