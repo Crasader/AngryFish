@@ -31,6 +31,12 @@
     <Filter Include="Math">
       <UniqueIdentifier>{0a61a822-b123-4b52-816f-b855086a430c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects\Player\StateControllers">
+      <UniqueIdentifier>{74292123-2c49-40e4-a62e-f5c6a0ff4acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\PlayerBubble">
+      <UniqueIdentifier>{ddd81ad5-ecd0-4850-9483-9d06c1edebf6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -72,6 +78,21 @@
     <ClCompile Include="..\Classes\Math\AngleUnwrapper.cpp">
       <Filter>Math</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerStateController.cpp">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerIdleStateController.cpp">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.cpp">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerDeathStateController.cpp">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\PlayerBubble\PlayerBubble.cpp">
+      <Filter>Objects\PlayerBubble</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -112,6 +133,21 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Math\AngleUnwrapper.h">
       <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerStateController.h">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerIdleStateController.h">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.h">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerDeathStateController.h">
+      <Filter>Objects\Player\StateControllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\PlayerBubble\PlayerBubble.h">
+      <Filter>Objects\PlayerBubble</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

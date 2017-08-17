@@ -20,6 +20,8 @@ public:
 	void addGameObject(BaseGameObject *gameObject);
 	
 	void initPlayer();
+
+	void createPlayerBubble();
 private:
 	Layer *_worldLayer;
 	Sprite *_backgroundSprite;

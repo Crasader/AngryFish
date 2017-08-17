@@ -150,7 +150,12 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\Math\AngleHelper.cpp" />
     <ClCompile Include="..\Classes\Math\AngleUnwrapper.cpp" />
     <ClCompile Include="..\Classes\Objects\Common\BaseGameObject.cpp" />
+    <ClCompile Include="..\Classes\Objects\PlayerBubble\PlayerBubble.cpp" />
     <ClCompile Include="..\Classes\Objects\Player\Player.cpp" />
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.cpp" />
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerDeathStateController.cpp" />
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerIdleStateController.cpp" />
+    <ClCompile Include="..\Classes\Objects\Player\StateControllers\PlayerStateController.cpp" />
     <ClCompile Include="..\Classes\Physics\MyBody.cpp" />
     <ClCompile Include="..\Classes\Physics\MyCircleBody.cpp" />
     <ClCompile Include="..\Classes\Physics\MyPhysics.cpp" />
@@ -167,7 +172,12 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\Math\AngleHelper.h" />
     <ClInclude Include="..\Classes\Math\AngleUnwrapper.h" />
     <ClInclude Include="..\Classes\Objects\Common\BaseGameObject.h" />
+    <ClInclude Include="..\Classes\Objects\PlayerBubble\PlayerBubble.h" />
     <ClInclude Include="..\Classes\Objects\Player\Player.h" />
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerAttackStateController.h" />
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerDeathStateController.h" />
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerIdleStateController.h" />
+    <ClInclude Include="..\Classes\Objects\Player\StateControllers\PlayerStateController.h" />
     <ClInclude Include="..\Classes\Physics\MyBody.h" />
     <ClInclude Include="..\Classes\Physics\MyCircleBody.h" />
     <ClInclude Include="..\Classes\Physics\MyPhysics.h" />

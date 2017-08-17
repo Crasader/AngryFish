@@ -1,5 +1,10 @@
 #include "BaseGameObject.h"
 
+BaseGameObject::~BaseGameObject()
+{
+
+}
+
 void BaseGameObject::init()
 {
 

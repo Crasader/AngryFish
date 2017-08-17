@@ -3,11 +3,13 @@
 enum class GameObjectType
 {
 	DEFAULT,
-	PLAYER
+	PLAYER,
+	PLAYER_BUBBLE
 };
 class BaseGameObject
 {
 public:
+	virtual ~BaseGameObject();
 	virtual void init();
 	virtual void update(float dt);
 	void addToWorld(Layer *world);
