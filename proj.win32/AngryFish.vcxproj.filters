@@ -13,6 +13,24 @@
     <Filter Include="Sounds">
       <UniqueIdentifier>{c578cf34-702a-478c-bd5f-6ca0ee91dea5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{a3f154b8-49be-44b3-8415-1b0a7441682c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{1c24f968-9b2f-4ed1-9148-fd27ab37cf0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cocos">
+      <UniqueIdentifier>{538826e2-795c-4eec-b2cf-c989938cb40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Player">
+      <UniqueIdentifier>{5ee90f50-5c39-4a7e-9309-2c7a5850f610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Common">
+      <UniqueIdentifier>{a3b9c0fa-57dd-494b-884b-6f221ed6f0f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{0a61a822-b123-4b52-816f-b855086a430c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -30,6 +48,30 @@
       <Filter>Scenes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Scenes\ScenesManager.cpp" />
+    <ClCompile Include="..\Classes\Physics\MyCircleBody.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Physics\MyBody.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Physics\MyPhysics.cpp">
+      <Filter>Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Cocos\BodySprite.cpp">
+      <Filter>Cocos</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player\Player.cpp">
+      <Filter>Objects\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Common\BaseGameObject.cpp">
+      <Filter>Objects\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Math\AngleHelper.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Math\AngleUnwrapper.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -47,6 +89,30 @@
       <Filter>Scenes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\ScenesManager.h" />
+    <ClInclude Include="..\Classes\Physics\MyPhysics.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Physics\MyCircleBody.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Physics\MyBody.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Cocos\BodySprite.h">
+      <Filter>Cocos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player\Player.h">
+      <Filter>Objects\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Common\BaseGameObject.h">
+      <Filter>Objects\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Math\AngleHelper.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Math\AngleUnwrapper.h">
+      <Filter>Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="game.rc">
